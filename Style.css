@@ -1,0 +1,59 @@
+body {
+    background-image: url();
+    background-position-x: -160px;
+    color: #000000;
+
+}
+/* title */
+h1 {
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 160px;
+    /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+/* image on home */
+.center {
+    display: block;
+    width: 30%;
+    align-items: center;
+    margin-left: 710px;
+    /*Manually alligned*/
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5e0d0d;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: underline;
+    font-size: 25px;
+    color: #c95252;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+/* paragraph style */
+.Body {font-style: oblique;
+    font-size: 200%;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 160px;
+    color: #696060;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: .2px;}
