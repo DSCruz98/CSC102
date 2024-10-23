@@ -18,8 +18,8 @@ h1 {
 .center {
     display: block;
     width: 30%;
-    align-items: center;
-    margin-left: 710px;
+    margin-left: auto;
+    margin-right: auto;
     /*Manually alligned*/
 }
 
@@ -57,3 +57,29 @@ h1 {
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: .2px;}
+
+    .button {
+        background-color: #770000;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+       margin-left: 160px;
+      }
+
+.button:hover{
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background-color: #b30404;}
+
+.demo{
+    font-style: oblique;
+    font-size: 200%;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 160px;
+    color: #000000;}

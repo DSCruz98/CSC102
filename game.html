@@ -1,0 +1,39 @@
+<!-- Drake Cruz Oct 23, 2024 -->
+<!-- tells the browser what kind of page it is -->
+<!DOCTYPE html>
+<!-- link to stylesheet -->
+<link rel="stylesheet" href="Style.css" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+  </head>
+  <body>
+    <!-- first Button confrims functionality -->
+    <button id="button" type="button" class="button" onclick="rollDice()">
+      Roll for Fun!
+    </button>
+    <br />
+    <!-- line breaks keep the buttons seperate -->
+    <br />
+    <!-- Starts the game -->
+    <button id="button" type="button" class="button" onclick="playGame()">
+      Play Game
+    </button>
+    <br />
+    <br />
+    <!-- sometimes it needs a manual reset -->
+    <button id="button" type="button" class="button" onclick="resetGame()">
+      Reset Game
+    </button>
+    <!-- links to the rest of my pages for this class -->
+    <div class="sidenav">
+      <a href="Index.html">Home</a><br />
+      <a href="Boards.html">Boards</a><br />
+      <a href="game.html">Game</a>
+    </div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
