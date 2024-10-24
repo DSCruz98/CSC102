@@ -6,8 +6,8 @@ let point = 0;
         let die2 = Math.floor(Math.random() * 6) + 1;
         // adds dice
         let total = die1 + die2;
-// popup for user on alert
-        alert("You rolled a " + die1 + " and a " + die2 + " (Total: " + total + ")");
+// popup for user
+document.getElementById("diceRoll").innerHTML = "You rolled a " + die1 + " and a " + die2 + " (Total: " + total + ")";
 
         return total;
     }
@@ -17,27 +17,24 @@ let point = 0;
             // First roll
             let firstRoll = rollDice();
             if (firstRoll === 7 || firstRoll === 11) {
-                alert("You rolled a " + firstRoll + ". You win!");
-                resetGame();
+                document.getElementById("gameResult").innerHTML = "You rolled a " + firstRoll + ". You win!";
             } else if (firstRoll === 2 || firstRoll === 3 || firstRoll === 12) {
-                alert("You rolled a " + firstRoll + ". Craps! You lose!");
-                resetGame();
+                document.getElementById("gameResult").innerHTML = "You rolled a " + firstRoll + ". Craps! You lose!";
             } else {
                 // Sets the point
                 point = firstRoll;
-                alert("Your point is now " + point + ". Keep rolling to hit your point!");
+                document.getElementById("gameResult").innerHTML = "Your point is now " + point + ". Keep rolling to hit your point!";
             }
         } else {
             // Subsequent Rolls
             let nextRoll = rollDice();
             if (nextRoll === point) {
-                alert("You rolled your point " + point + "! You win!");
-                resetGame();
+                document.getElementById("gameResult").innerHTML = "You rolled your point " + point + "! You win!";
             } else if (nextRoll === 7) {
-                alert("You rolled a 7. You lose!");
-                resetGame();
+                document.getElementById("gameResult").innerHTML = "You rolled a 7. You lose!";
+               
             } else {
-                alert("Keep rolling! Try to hit your point " + point + "!");
+                document.getElementById("gameResult").innerHTML = "Keep rolling! Try to hit your point " + point + "!";
             }
         }
     }
@@ -45,4 +42,6 @@ let point = 0;
 // third button
     function resetGame() {
         point = 0;
+        document.getElementById("diceRoll").innerHTML = "Roll the dice to start playing!";
+        document.getElementById("gameResult").innerHTML = " "
     }
