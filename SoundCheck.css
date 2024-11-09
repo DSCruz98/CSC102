@@ -1,0 +1,34 @@
+/* Drake Cruz 11/8/24 Fresh UI */
+/* used a rainlike color pallete */
+body {
+ background-image: url(Rain.gif);
+ background-size: cover;
+ }
+/* Audio controls and buttons */
+h2{
+    color: aqua;
+    text-align: center;}
+/* credit for sound artist */
+h4 {color: #ffffff;
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;}
+/* audio control specific */
+audio { background-color: #8300da;
+        padding: 10px 10px;
+        font-size: 16px;
+        border-radius: 120px;}
+/* button specific */
+button { background-color: #200077;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 120px;}
+/* image settings */
+    .center {
+        display: block;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
