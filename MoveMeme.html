@@ -1,0 +1,34 @@
+<!-- Drake Cruz 11/10/24 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoveMeme</title>
+    <script src="MoveMeme.js"></script>
+    <link rel="stylesheet" href="MoveMeme.css" />
+  </head>
+  <body>
+    <!-- title card -->
+    <h1 id="Initiate1">Trail Closed</h1>
+    <!-- buttons -->
+    <button id="startButton" class="center" onclick="intervalStart();">
+      Start
+    </button>
+    <button id="stopButton" class="center" onclick="intervalStop();">
+      Stop
+    </button>
+    <br />
+    <!-- question card -->
+    <h2 id="Initiate2">Start?</h2>
+    <!-- y coord indicates distance fallen -->
+    <p id="yCoord">0</p>
+    <br />
+    <!-- initial image will change when buttons activated -->
+    <img
+      src="Trail closed.jpg"
+      id="imgMeme"
+      style="position: absolute; left: 1; top: 1; width: 200px"
+    />
+  </body>
+</html>
