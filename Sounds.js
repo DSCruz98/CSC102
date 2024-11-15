@@ -10,7 +10,7 @@ function sound(src) {
 }
 // starts owl audio
 function play() {
-  mySound = new sound("Sounds/owl.mp3");
+  mySound = new sound("owl.mp3");
   mySound.play();
 }
 // Just refreshes the page ending all sounds

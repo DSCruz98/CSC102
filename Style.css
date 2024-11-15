@@ -1,64 +1,74 @@
-body {
-    background-image: url(Texture.jpg);
-    background-position-x: -160px;
-    color: #000000;
+/* Final CSS for all 6 Pages */
+/* Drake Cruz - CSC102 - 11/14/24 */
+/* UI Updates- combined all css into one and added classes to differentiate objects */
 
+/* Standard Bodies */
+body {
+     background-image: url(Texture.jpg);
+     background-position-x: -160px;
+     color: #000000;}
+
+footer {
+     text-align: center;
 }
+
 /* title */
 h1 {
-    color: #ffffff;
-    text-shadow: 0 0 20px rgb(0, 0, 0);
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    margin-left: 160px;
-    /* Same as the width of the sidenav */
-    padding: 0px 10px;
-}
-/* image on home */
+     color: #ffffff;
+     text-shadow: 0 0 20px rgb(0, 0, 0);
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+     /* Same as the width of the sidenav */
+     padding: 0px 10px;}
+
+/* still images */
 .center {
-    display: block;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    /*Manually alligned*/
-}
+     display: block;
+     width: 30%;
+     margin-left: auto;
+     margin-right: auto;}
 
+/* page to page navigation */
 .sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #5e0d0d;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
+     height: 100%;
+     width: 160px;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #5e0d0d;
+     overflow-x: hidden;
+     padding-top: 20px;}
 
+/* Navigation links */
 .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: underline;
-    font-size: 25px;
-    color: #c95252;
-    display: block;
-}
-
+     padding: 6px 8px 6px 16px;
+     text-decoration: underline;
+     font-size: 25px;
+     color: #c95252;
+     display: block;}
 .sidenav a:hover {
-    color: #f1f1f1;
-}
-/* paragraph style */
-.Body {font-style: oblique;
-    font-size: 200%;
-    font-weight: 100;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    margin-left: 160px;
-    color: #d1cbcb;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    -webkit-text-stroke-color: #000000;
-    -webkit-text-stroke-width: .2px;}
+     color: #f1f1f1;}
 
-    .button {
+/* paragraph style */
+.Body {
+    font-style: oblique;
+     font-size: 200%;
+     font-weight: 100;
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+     margin-left: 160px;
+     color: #d1cbcb;
+     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+     -webkit-text-stroke-color: #000000;
+     -webkit-text-stroke-width: .2px;}
+
+
+
+    
+            /* Game Page stuff */
+/* Game Page buttons */
+.button {
         background-color: #770000;
         border: none;
         color: white;
@@ -67,37 +77,154 @@ h1 {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-       margin-left: 160px;
-      }
-
-.button:hover{
+       margin-left: 160px;}
+.button:hover {
     font-weight: bold;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     background-color: #b30404;}
-
-.demo{
+/* Game results */
+#gameResult {
+     font-style: oblique;
+     font-size: 200%;
+     font-weight: 100;
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+     margin-left: 160px;
+     color: #000000;
+     text-shadow: 2px 2px 1px #ffffff;}
+/* Dice */
+#diceRoll {
     font-style: oblique;
-    font-size: 200%;
-    font-weight: 100;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    margin-left: 160px;
-    color: #000000;}
+     font-size: 200%;
+     font-weight: 100;
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+     margin-left: 160px;
+     color: #000000;
+     text-shadow: 2px 2px 1px #ffffff;}
 
-    #gameResult{font-style: oblique;
-        font-size: 200%;
-        font-weight: 100;
-        font-family: 'Times New Roman', Times, serif;
-        text-align: center;
-        margin-left: 160px;
-        color: #000000;
-        text-shadow: 2px 2px 1px #ffffff;}
 
-    #diceRoll{font-style: oblique;
-         font-size: 200%;
-        font-weight: 100;
-        font-family: 'Times New Roman', Times, serif;
-        text-align: center;
+
+            /* Palindrome Page stuff */
+/* inputs and labels */
+form {
+     text-align: center;
+     font-size: larger;
+     color: #f1f1f1;
+     text-shadow: 10px 10px 20px rgb(0, 0, 0);
+     font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;}
+/* palindrome button */
+#button1 {
+     background-color: #200077;
+     color: white;
+     padding: 10px 10px;
+     text-align: center;
+     font-size: 16px;
+     border-radius: 120px;}
+/* validate button */
+ #button2 {
+     background-color: #007724;
+     color: white;
+     padding: 10px 10px;
+     text-align: center;
+     font-size: 16px;
+     border-radius: 120px;}
+
+
+
+              /* MoveMeme stuff */
+/* MoveMeme specific background */
+ body.MoveMeme {
+     background-color: #fac076;
+     background-image: url(dirt.jfif);
+     background-size: contain;}
+/* Coord for fall */
+ #yCoord {
+     text-align: center;
+     font-size: 200%;
+     color: rgb(255, 41, 41);
+     text-shadow: 5px 5px 20px rgb(0, 0, 0);
+     font-family: 'Times New Roman', Times, serif;
+     background-color: #f1d536;
+     width: 10%;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 120px;}
+/* MoveMeme buttons */
+ #startButton {
+     background-color: #773600;
+     color: white;
+     padding: 10px 10px;
+     text-align: center;
+     font-size: 16px;
+     border-radius: 120px;
+     display: block;
+     width: 10%;
+     margin-left: auto;
+     margin-right: auto;}
+#stopButton {
+     background-color: #773600;
+     color: white;
+     padding: 10px 10px;
+     text-align: center;
+     font-size: 16px;
+     border-radius: 120px;
+     display: block;
+     width: 10%;
+     margin-left: auto;
+     margin-right: auto;}
+/* pushes image from sidenav */
+.imgMeme {
+     margin-left: 160px;}
+/* text under buttons */
+h3 {
+     color: #d3950f;
+     font-size: 300%;
+     text-shadow: 10px 10px 20px rgb(0, 0, 0);
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;}
+
+
+
+              /* Sound Page stuff */
+/* Sound button specific */
+.soundButton { 
+     background-color: #200077;
+     color: white;
+     padding: 10px 10px;
+     text-align: center;
+     font-size: 16px;
+     border-radius: 120px;}
+/* audio control specific */
+audio {
+     background-color: #8300da;
+     padding: 10px 10px;
+     font-size: 16px;
+     border-radius: 120px;}
+/* Sound page background */
+body.Sound{
+     background-image: url(Rain.gif);
+     background-position: center;
+     background-size: cover;}
+/* credit for sound artist */
+h6 {
+     color: #ffffff;
+     text-shadow: 0 0 20px rgb(0, 0, 0);
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;}
+/* Sounds page text and ease of formatting for audio */
+h2 {
+     color: #3a14c5;
+     text-shadow: 10px 10px 20px rgb(0, 0, 0);
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;}
+
+     /* Contact Page stuff */
+/* table style */
+table, th, td {
+        border:5px solid rgb(78, 6, 6);
+        text-shadow: 1px 1px 1px;
+        color: #ffffff;
         margin-left: 160px;
-        color: #000000;
-        text-shadow: 2px 2px 1px #ffffff;}
+      }
